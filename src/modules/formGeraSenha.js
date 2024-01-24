@@ -15,6 +15,9 @@ export default () => {
 };
 
 function gera() {
+
+    if(qtdCarac.value < 0 || qtdCarac.value > 25) return 'Quantidade inválida.'
+
     const senha = geraSenha(
         qtdCarac.value,
         chkMaiu.checked,
