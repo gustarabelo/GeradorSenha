@@ -29,22 +29,22 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: center;
 }
 
-/* form input,
-form label,
-form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
 
 form input {
     font-size: 24px;
-    height: 50px;
+    height: 30px;
     padding: 0 20px;
+    margin: 15px 0px;
 }
 
+form input,
 form input:focus {
     outline: 1px solid var(--primary-color);
 }
@@ -62,4 +62,22 @@ form button {
 
 form button:hover{
     background: var(--primary-color-darker);
-} */
+}
+
+.senha-gerada{
+    font-size: 2em;
+    color: var(--primary-color);
+    margin: 40px 0px
+}
+
+input[type="checkbox"]{
+    display: inline;
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    display: block;
+    margin: 40px 0px;
+    font-size: 1em;
+}
