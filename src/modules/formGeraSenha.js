@@ -23,5 +23,5 @@ function gera() {
         chkSimb.checked
     );
 
-    return senha;
+    return senha || 'Nada Selecionado.';
 }
