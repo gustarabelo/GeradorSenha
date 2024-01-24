@@ -31,7 +31,7 @@ body {
     border-radius: 10px;
 }
 
-form input,
+/* form input,
 form label,
 form button {
     display: block;
@@ -62,4 +62,4 @@ form button {
 
 form button:hover{
     background: var(--primary-color-darker);
-}
+} */
