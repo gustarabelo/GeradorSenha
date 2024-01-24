@@ -1,5 +1,27 @@
 import geraSenha from "./geradores";
 
+const senhaGerada = document.querySelector('.senha-gerada');
+const qtdCarac = document.querySelector('.qtd-carac');
+const chkMaiu = document.querySelector('.chk-maiu');
+const chkMinu = document.querySelector('.chk-minu');
+const chkNume = document.querySelector('.chk-nume');
+const chkSimb = document.querySelector('.chk-simb');
+const gerarSenha = document.querySelector('.gerar-senha');
+
 export default () => {
-    console.log('knsdksnds')
+    gerarSenha.addEventListener('click', () => {
+        senhaGerada.innerHTML = gera();
+    });
 };
+
+function gera() {
+    const senha = geraSenha(
+        qtdCarac.value,
+        chkMaiu.checked,
+        chkMinu.checked,
+        chkNume.checked,
+        chkSimb.checked
+    );
+
+    return senha;
+}
